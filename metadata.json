@@ -1,0 +1,8 @@
+{
+  "name": "GreenThumb AI",
+  "description": "Your personal AI gardening assistant. Identify plants instantly and get expert care advice through chat.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
