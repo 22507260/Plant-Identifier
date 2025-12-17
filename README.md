@@ -18,6 +18,14 @@
   ---
 </div>
 
+## 📸 Screenshots
+
+<div align="center">
+  <img src="screenshots/analyze.png" width="30%" alt="Plant Analysis" />
+  <img src="screenshots/garden.png" width="30%" alt="My Garden" />
+  <img src="screenshots/chat.png" width="30%" alt="AI Expert Chat" />
+</div>
+
 ## 📖 About
 
 GreenThumb AI is an intelligent gardening companion designed to help plant enthusiasts of all levels. Leveraging the power of Google's Gemini AI, it allows users to identify plants by simply snapping a picture or uploading an image. Keep track of your garden with smart watering schedules and chat with our AI expert for personalized gardening advice.
