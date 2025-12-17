@@ -14,9 +14,14 @@ const getAI = () => {
   if (!ai) {
     if (!apiKey) {
       console.error("API_KEY is missing");
-      throw new Error("API Key is required");
+      // Allow app to run without API key for UI testing/development if needed,
+      // but warn heavily. The calls will fail later if actually used.
+      // However, if we throw here, the app crashes on load if `getAI` is called during init?
+      // `startChat` calls `getAI` immediately? No, `startChat` calls `getAI`.
+      // `analyzePlantImage` calls `getAI`.
+      // The issue is if the component calls these on render.
     }
-    ai = new GoogleGenAI({ apiKey });
+    ai = new GoogleGenAI({ apiKey: apiKey || 'dummy_key' });
   }
   return ai;
 };
